@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        
+        <script src="script.js" defer></script>
+        <title>Document</title>
+</head>
+<body>
+
+<!-- HEADER  -->
+<div class="header">
+  <div class="pokedatatext">PokeData App🔎</div>
+  <div class="pokedatalogo">
+    <img src="pokeDataLogo.png" class="pokedatalogoimg">
+  </div>
+  <div class="pokedatainfo">
+    <p class="pokedatainfotext">Aplicación hecha por <span class="miguelgarcia">Miguel García</span> con HTML, CSS y JavaScript usando pokeapi.co como base de datos API</p>
+    <p class="pokedatainfotext">©️ Todos los Pokémon son propiedad registrada de Nintendo</p>
+  </div>
+
+
+</div>
+
+<!-- // PART 1 // -->        
+<div class="wrapall">
+
+<div class="divpokemonimgs" id="1">
+  <div class="divpokemonimgs_name"><div class="pokemonnametext"><div class="divpokemonnametext"></div></div></div>
+  <div class="divpokemonimgs_gen5">
+          <img src="" class="gen5img">
+          <img src="" class="gen5imgshiny">
+  </div>
+  <div class="divpokemonimgs_gen4">
+        <img src="" class="gen4img">
+        <img src="" class="gen4imgshiny">
+  </div>
+  <div class="divpokemonimgs_gen3">
+        <img src="" class="gen3img">
+        <img src="" class="gen3imgshiny">
+  </div>
+</div>
+<!-- // PART 2 // -->
+<div class="divpokemondata" id="2">
+  <div class="divpokemondata_types">
+     <div class="divpokemondata_type1"></div>
+     <div class="divpokemondata_type2"></div>
+  </div>
+  <div class="divpokemondata_stats"></div>
+  <div class="divpokemondata_region"></div>
+  <div class="divpokemondata_random4moves"></div>
+</div>
+<!-- // PART 3 // -->
+<div class="divcontrolpanel" id="3">
+  <div class="divcontrolpanel_buscar">
+        <p class="controlpanelbuscartext">BUSCA UN POKÉMON POR NOMBRE O NÚMERO</p>
+        <form class="forminput" action="" onsubmit="searchPokemon(event)">
+        <input type="text" class="inputtextpokemon">
+        </form>
+        <div class="error"></div>
+  </div>
+  <div class="divcontrolpanel_aleatorio">
+    <div class="pokemonaleatoriotext">POKEMON ALEATORIO</div>
+    <button class="btnpokemonaleatorio"></button>
+  </div>
+  <div class="divcontrolpanel_aleatoriotipo">
+    <div class="divtype1">
+      <div class="typestoptext">TIPO NORMAL</div>
+      <div class=divbtnnormal>
+        <button class="btnnormal"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO LUCHA</div>
+      <div class=divbtnnormal><button class="btnlucha"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO VUELO</div>
+      <div class=divbtnnormal><button class="btnvuelo"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO VENENO</div>
+      <div class=divbtnnormal><button class="btnveneno"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO TIERRA</div>
+      <div class=divbtnnormal><button class="btntierra"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO ROCA</div>
+      <div class=divbtnnormal><button class="btnroca"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO BICHO</div>
+      <div class=divbtnnormal><button class="btnbicho"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO FANTASMA</div>
+      <div class=divbtnnormal><button class="btnfantasma"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO ACERO</div>
+      <div class=divbtnnormal><button class="btnacero"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO FUEGO</div>
+      <div class=divbtnnormal><button class="btnfuego"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO AGUA</div>
+      <div class=divbtnnormal><button class="btnagua"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO PLANTA</div>
+      <div class=divbtnnormal><button class="btnplanta"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO ELECTRICO</div>
+      <div class=divbtnnormal><button class="btnelectrico"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO PSIQUICO</div>
+      <div class=divbtnnormal><button class="btnpsiquico"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO HIELO</div>
+      <div class=divbtnnormal><button class="btnhielo"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO DRAGÓN</div>
+      <div class=divbtnnormal><button class="btndragon"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO OSCURO</div>
+      <div class=divbtnnormal><button class="btnoscuro"></button></div>
+    </div>
+    <div class="divtype1">
+      <div class="typestoptext">TIPO HADA</div>
+      <div class=divbtnnormal><button class="btnhada"></button></div>
+    </div>
+  </div>
+  
+    
+  <!-- <div class="divcontrolpanel_aleatorioregion"></div> -->
+  <!-- <div class="divcontrolpanel_aleatoriolegendario"></div> -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

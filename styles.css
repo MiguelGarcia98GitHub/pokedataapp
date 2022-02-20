@@ -1,0 +1,318 @@
+html {
+  font-size: 16px;
+  background-image: linear-gradient(315deg, #2876f9 0%, #4717cb 74%);
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #ef5734;
+  background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  width: 100%;
+  height: 7rem;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+}
+
+.pokedatatext {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.pokedatalogo {
+  padding-bottom: 5rem;
+}
+
+.pokedatalogoimg {
+  position: absolute;
+  width: 5.5rem;
+  margin-top: 1px;
+}
+
+.pokedatainfo {
+  margin-left: 3rem;
+}
+
+.pokedatainfotext {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+/* AFTER HEADER */
+
+.wrapall {
+  display: flex;
+  text-align: center;
+  margin: 2.1rem;
+  width: 95vw;
+}
+
+img {
+  width: 10.5vh;
+  margin-top: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* // PART 1 // */
+
+.divpokemonimgs {
+  display: grid;
+  text-align: center;
+  background-color: #6617cb;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  width: 30vw;
+  margin: 1rem;
+  height: 70vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.divpokemonimgs > * {
+  margin-top: 0.8rem;
+  margin-left: 30px;
+  margin-right: 25px;
+  border: 2px solid black;
+  height: 10rem;
+  background-color: #c19edd;
+}
+
+.divpokemonimgs_name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.divpokemonimgs_gen5 {
+  margin-left: 30px;
+  margin-right: 25px;
+  border: 2px solid black;
+  height: 7rem;
+  background-color: #c19edd;
+}
+
+.divpokemonimgs_gen4 {
+  margin-top: 0.2rem;
+  margin-left: 30px;
+  margin-right: 25px;
+  border: 2px solid black;
+  height: 7rem;
+  background-color: #c19edd;
+}
+
+.divpokemonimgs_gen3 {
+  margin-top: 0.3rem;
+  margin-left: 30px;
+  margin-right: 25px;
+  border: 2px solid black;
+  height: 7rem;
+  background-color: #c19edd;
+}
+
+.divpokemonnametext {
+  padding-top: 10%;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.pokemonnametextafterjs {
+  padding-bottom: 10rem;
+  font-size: 2.5rem;
+}
+
+/* // PART 2 // */
+
+.divpokemondata {
+  display: grid;
+  text-align: center;
+  background-color: #6617cb;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  width: 30vw;
+  margin: 1rem;
+  height: 70vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.divpokemondata > * {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 25px;
+  height: 83%;
+}
+
+.statelement {
+  font-size: 1.2rem;
+}
+
+.divpokemondata_type1 {
+  font-size: 1.4rem;
+}
+
+.divpokemondata_type2 {
+  font-size: 1.4rem;
+}
+
+.titletypestext {
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.titletypes1 {
+  font-size: 1.3rem;
+  padding-top: 0.3rem;
+  display: inline-block;
+}
+
+.titulostats {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.titulozonas {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.regionstext {
+  font-size: 1.15rem;
+  line-height: 0.7rem;
+}
+
+.titulomoves {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.movestext {
+  line-height: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.divpokemondata_stats > * {
+  margin: 0.4rem;
+}
+
+/* // PART 3 // */
+
+.divcontrolpanel {
+  display: grid;
+  text-align: center;
+  background-color: #6617cb;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  width: 30vw;
+  margin: 1rem;
+  height: 70vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.btnpokemonaleatorio {
+  margin-bottom: 1rem;
+}
+
+.controlpanelbuscartext {
+  color: white;
+}
+
+.pokemonaleatoriotext {
+  color: white;
+  margin-top: 0.6rem;
+}
+
+.divcontrolpanel > * {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 25px;
+  border: 2px solid black;
+  height: 77%;
+}
+
+.inputtextpokemon {
+  background-color: #d3c8cf;
+  border: 1px solid black;
+  text-align: center;
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 1.5rem;
+}
+
+.typestoptext {
+  color: white;
+}
+
+/* BUTTONS */
+
+button {
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0489fd;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.divcontrolpanel_aleatoriotipo {
+  display: grid;
+  grid-template-columns: 20vh 20vh;
+  grid-gap: 0.1rem;
+  height: 48vh;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.divtype1 {
+  margin-top: 3px;
+  width: 17vw;
+}
+
+/* NORMAL */

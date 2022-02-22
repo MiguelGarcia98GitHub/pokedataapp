@@ -123,7 +123,9 @@ body {
   background-color: #c19edd;
   min-height: 80px;
   max-height: 82px;
+  max-width: 100%;
   overflow: hidden;
+  
 }
 
 .divpokemonimgs_gen4 {
@@ -135,7 +137,9 @@ body {
   background-color: #c19edd;
   min-height: 80px;
   max-height: 82px;
+  max-width: 100%;
   overflow: hidden;
+  
 }
 
 .divpokemonimgs_gen3 {
@@ -147,6 +151,7 @@ body {
   background-color: #c19edd;
   min-height: 80px;
   max-height: 82px;
+  max-width: 100%;
   overflow: hidden;
 }
 

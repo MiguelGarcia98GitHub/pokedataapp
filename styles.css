@@ -4,7 +4,7 @@ html {
   font-weight: 700;
   font-family: "Rubik", sans-serif;
   background-repeat: no-repeat;
-  height: 120%;
+  height: 130%;
 }
 
 body {
@@ -33,6 +33,7 @@ body {
   margin-top: 1.5rem;
   font-weight: 600;
   min-width: 20rem;
+  margin-left: 1vw;
 }
 
 .pokedatalogo {
@@ -48,11 +49,14 @@ body {
 
 .pokedatainfo {
   margin-left: 3rem;
+  overflow: hidden;
 }
 
 .pokedatainfotext {
   margin-top: 1.5rem;
   margin-left: 2rem;
+  max-height: 6vh;
+  white-space: nowrap;
 }
 
 /* AFTER HEADER */
@@ -118,7 +122,8 @@ body {
   height: 7rem;
   background-color: #c19edd;
   min-height: 80px;
-  max-height: 100px;
+  max-height: 82px;
+  overflow: hidden;
 }
 
 .divpokemonimgs_gen4 {
@@ -129,7 +134,8 @@ body {
   height: 7rem;
   background-color: #c19edd;
   min-height: 80px;
-  max-height: 100px;
+  max-height: 82px;
+  overflow: hidden;
 }
 
 .divpokemonimgs_gen3 {
@@ -140,7 +146,8 @@ body {
   height: 7rem;
   background-color: #c19edd;
   min-height: 80px;
-  max-height: 100px;
+  max-height: 82px;
+  overflow: hidden;
 }
 
 .divpokemonnametext {
@@ -322,12 +329,11 @@ button:active {
   display: grid;
   grid-template-columns: 20vh 20vh;
   grid-gap: 0.1rem;
-  max-height: 100%;
+  max-height: 90%;
   font-size: 0.8rem;
   font-weight: 600;
   text-align: center;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .divtype1 {
@@ -336,3 +342,20 @@ button:active {
 }
 
 /* NORMAL */
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  height: 110%;
+  width: 0.6vw;
+  background: rgb(74, 5, 83);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #af0699;
+  -webkit-border-radius: 1px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.95);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
